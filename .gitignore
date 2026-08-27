@@ -1,0 +1,26 @@
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets - never commit tokens
+.env
+.env.*
+*.token
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
