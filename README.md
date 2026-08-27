@@ -16,6 +16,8 @@ lives in your prompt and can change without touching this code.
 
 
 | `find_stale_pull_requests(repo, days=3)` | Open, non-draft PRs with no **push or review** in the last N days. Same shape as `list_pull_requests` plus `days_stale`, `last_activity_type` (`push` / `review` / `created`) and `last_activity_at`. A PR that only got comments still counts as stale. |
+
+
 | `post_to_slack(channel, text, blocks=None, thread_ts=None)` | Posts the message as given. Returns `{ts, channel, permalink}`. Accepts Block Kit; if Slack rejects the blocks it retries as plain text and sets `fell_back_to_text`. |
 
 `repo` is always `owner/name`.
