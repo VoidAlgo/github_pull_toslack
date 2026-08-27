@@ -1,0 +1,41 @@
+# Normalize line endings: LF in the repository, on every platform.
+# Without this, checkouts on Windows commit CRLF and every file reads as
+# fully rewritten to anyone on macOS or Linux.
+* text=auto eol=lf
+
+# Source and config - always LF, including in the working tree.
+*.py     text eol=lf diff=python
+*.pyi    text eol=lf diff=python
+*.md     text eol=lf
+*.txt    text eol=lf
+*.json   text eol=lf
+*.toml   text eol=lf
+*.cfg    text eol=lf
+*.ini    text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.sh     text eol=lf
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+
+# Windows-only scripts need CRLF to run correctly.
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+
+# Binaries - never touch these.
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.zip    binary
+*.gz     binary
+*.whl    binary
+*.exe    binary
+*.dll    binary
+*.so     binary
+*.dylib  binary
+*.pyc    binary
+*.pyd    binary

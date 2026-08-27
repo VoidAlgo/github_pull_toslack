@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# github_pull_toslack
-=======
 # github-pr-slack MCP server
 
 An MCP server (stdio transport) that reads pull requests from GitHub and posts
@@ -182,4 +179,3 @@ The model calls `find_stale_pull_requests`, writes the digest itself, then calls
 `mergeable_state`) and per-PR reviews (for `review_state`), so it spends roughly
 `1 + 2 × max_results` API calls. That is why results are cached for 60 seconds —
 a multi-step digest that lists, then inspects a few PRs, does not refetch the list.
->>>>>>> 0512605 (Add initial implementation)
